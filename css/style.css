@@ -1374,6 +1374,11 @@ header.fix_style .navbar-expand-lg .navbar-nav .nav-link.dark_btn {
 
 /* integration-section Css Start */
 
+
+.section_title p, .section_title h2 {
+  color: var(--text-white);
+}
+
 .row_am.integration_section {
   padding: 0;
 }
@@ -1382,6 +1387,9 @@ header.fix_style .navbar-expand-lg .navbar-nav .nav-link.dark_btn {
   position: relative;
   background-color: #080B42
 }
+
+
+
 
 .integration_section .integration_section_inner {
   background-color: #F6F4FE;
@@ -3097,6 +3105,8 @@ footer .top_footer .anim_line span:nth-child(2) {
 
 
 /* About us page css start */
+
+
 
 /* About us section css Start */
 .about_us_page_section {
