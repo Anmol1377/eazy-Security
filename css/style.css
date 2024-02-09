@@ -1375,7 +1375,7 @@ header.fix_style .navbar-expand-lg .navbar-nav .nav-link.dark_btn {
 /* integration-section Css Start */
 
 
-.section_title p, .section_title h2 {
+.integration_section .section_title p, .integration_section .section_title h2 {
   color: var(--text-white);
 }
 
