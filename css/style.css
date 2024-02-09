@@ -3121,7 +3121,7 @@ footer .top_footer .anim_line span:nth-child(2) {
 
 /* About us section css Start */
 .about_us_page_section {
-  padding: 100px 0;
+  padding: 40px 0;
   position: relative;
 }
 
@@ -5439,7 +5439,7 @@ footer .top_footer .anim_line span:nth-child(2) {
 
 .about_us_section::after {
   content: "";
-  background: url(../images/new/right-tech-bg.png);
+  /* background: url(../images/new/right-tech-bg.png); */
   background-repeat: no-repeat;
   width: 552px;
   height: 374px;
