@@ -5420,7 +5420,7 @@ footer .top_footer .anim_line span:nth-child(2) {
 
 /* About us section css Start */
 .about_us_section {
-  padding: 100px 0;
+  padding: 40px 0;
   background: var(--dark-blue);
   position: relative;
 }
