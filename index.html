@@ -142,7 +142,7 @@
               <p>Shield your website from hacks, SQLi, XSS, proxy, VPN, TOR, and spam for robust online protection.</p>
             </div>
             <div class="btn_group">
-                  <button id="purchase" class="btn btn_main" data-aos="fade-right" data-aos-duration="1500" >BUY NOW<i
+                  <button class="purchase" class="btn btn_main" data-aos="fade-right" data-aos-duration="1500" >BUY NOW<i
                     class="icofont-arrow-right"></i></button>
               <a href="contact-us.html" class="btn btn_main" data-aos="fade-left" data-aos-duration="1500">DOCUMENTATION
                 <i class="icofont-arrow-right"></i></a>
@@ -953,7 +953,7 @@
                     <p><i class="icofont-check-circled"></i>+ many more</p>
                   </li>
                 </ul>
-                <a href="#" class="purchase-btm" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
+                <a  class="purchase" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
               </div>
             </div>
 
@@ -1487,13 +1487,13 @@
           plugin_id:  '14876',
           plan_id:    '24773',
           public_key: 'pk_08fa0dafbae425e7cf3d3afa4edf9',
-          image:      'images/new/Logo.png',
+          image:      'https://security.bikswee.com/doc/assets/img/logo-c.png',
           // Force load the new checkout style.
           checkout_style: 'next'
       });
       
-      // top button
-      $('#purchase').on('click', function (e) {
+      // button
+      $('.purchase').on('click', function (e) {
           handler.open({
               name     : 'EaZy Security',
               licenses : 1,
@@ -1502,29 +1502,14 @@
                   // The logic here will be executed immediately after the purchase confirmation.                                // alert(response.user.email);
               },
               success  : function (response) {
-                window.location.href = 'http://security.bikswee.com/doc/'; 
+                window.location.href = 'https://security.bikswee.com/doc/'; 
                 // The logic here will be executed after the customer closes the checkout, after a successful purchase.                                // alert(response.user.email);
               }
           });
           e.preventDefault();
       });
 
-      // pricing btn
-      $('.purchase-btm').on('click', function (e) {
-          handler.open({
-              name     : 'EaZy Security',
-              licenses : 1,
-              // You can consume the response for after purchase logic.
-              purchaseCompleted  : function (response) {
-                  // The logic here will be executed immediately after the purchase confirmation.                                // alert(response.user.email);
-              },
-              success  : function (response) {
-                window.location.href = 'http://security.bikswee.com/doc/'; 
-                // The logic here will be executed after the customer closes the checkout, after a successful purchase.                                // alert(response.user.email);
-              }
-          });
-          e.preventDefault();
-      });
+      
   </script>
 </body>
 
