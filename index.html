@@ -953,7 +953,7 @@
                     <p><i class="icofont-check-circled"></i>+ many more</p>
                   </li>
                 </ul>
-                <a href="#" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
+                <a href="#" class="purchase-btm" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
               </div>
             </div>
 
@@ -999,11 +999,11 @@
         <!-- pricing box monthly end -->
 
         <!-- pricing box yearly start -->
-        <div class="pricing_pannel yearly_plan" data-aos="fade-up" data-aos-duration="1500">
+        <!-- <div class="pricing_pannel yearly_plan" data-aos="fade-up" data-aos-duration="1500">
           <div class="row">
 
             <!-- pricing box 1 -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
               <div class="pricing_block">
                 <div class="icon">
                   <img src="images/new/Free-Trial-01.svg" alt="image">
@@ -1035,13 +1035,13 @@
                     <p><i class="icofont-close-circled"></i>Live support</p>
                   </li>
                 </ul>
-                <button id="purchase" class="btn btn_main" data-aos="fade-right" data-aos-duration="1500" >BUY NOW<i
+                <button id="purchase-btm" class="btn btn_main" data-aos="fade-right" data-aos-duration="1500" >BUY NOW<i
                   class="icofont-arrow-right"></i></button>
               </div>
-            </div>
+            </div> -->
 
             <!-- pricing box 2 -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
               <div class="pricing_block highlited_block">
                 <div class="icon">
                   <img src="images/new/unlimited.png" alt="image">
@@ -1075,11 +1075,11 @@
                 </ul>
                 <a href="#" class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
               </div>
-            </div>
+            </div> -->
 
             <!-- pricing box 3 -->
             <div class="col-md-4">
-              <div class="pricing_block">
+              <!-- <div class="pricing_block">
                 <div class="icon">
                   <img src="images/new/Premium.svg" alt="image">
                   <div class="dot_block">
@@ -1111,11 +1111,11 @@
                   </li>
                 </ul>
                 <a id="purchase class="btn btn_main">BUY NOW <i class="icofont-arrow-right"></i></a>
-              </div>
+              </div> -->
             </div>
 
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- container start end -->
     </section>
@@ -1487,12 +1487,30 @@
           plugin_id:  '14876',
           plan_id:    '24773',
           public_key: 'pk_08fa0dafbae425e7cf3d3afa4edf9',
-          image:      '/images/new/Logo.png',
+          image:      'images/new/Logo.png',
           // Force load the new checkout style.
           checkout_style: 'next'
       });
       
+      // top button
       $('#purchase').on('click', function (e) {
+          handler.open({
+              name     : 'EaZy Security',
+              licenses : 1,
+              // You can consume the response for after purchase logic.
+              purchaseCompleted  : function (response) {
+                  // The logic here will be executed immediately after the purchase confirmation.                                // alert(response.user.email);
+              },
+              success  : function (response) {
+                window.location.href = 'http://security.bikswee.com/doc/'; 
+                // The logic here will be executed after the customer closes the checkout, after a successful purchase.                                // alert(response.user.email);
+              }
+          });
+          e.preventDefault();
+      });
+
+      // pricing btn
+      $('.purchase-btm').on('click', function (e) {
           handler.open({
               name     : 'EaZy Security',
               licenses : 1,
