@@ -142,9 +142,7 @@
               <p>Shield your website from hacks, SQLi, XSS, proxy, VPN, TOR, and spam for robust online protection.</p>
             </div>
             <div class="btn_group">
-              <li class="nav-item">
-                <a class="nav-link dark_btn purchase" href="#getstarted">TRY IT FREE <i class="icofont-arrow-right"></i></a>
-              </li>   
+                <a class="nav-link dark_btn " id="purchase" href="#getstarted">TRY IT FREE <i class="icofont-arrow-right"></i></a>
               <a href="contact-us.html" class="btn btn_main" data-aos="fade-left" data-aos-duration="1500">DOCUMENTATION
                 <i class="icofont-arrow-right"></i></a>
             </div>
@@ -1494,7 +1492,7 @@
       });
       
       // button
-      $('.purchase').on('click', function (e) {
+      $('#purchase').on('click', function (e) {
           handler.open({
               name     : 'EaZy Security',
               licenses : 1,
