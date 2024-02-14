@@ -1969,7 +1969,7 @@ iframe#youtubevideo {
   color: var(--text-white);
   background-image: var(--bg-orange-gradiunt);
   font-size: 15px;
-  padding: 9px 38px;
+  padding: 9px 20px;
   border-radius: 25px;
   position: relative;
   font-weight: 700;
