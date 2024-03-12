@@ -7,7 +7,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EaZy Security</title>
+  <title>EaZy Security-wordpress plugin | security plugin | cybersecurity | malware cleaning</title>
+  <meta name="description" content="Use our #1 security plugin to protect your WordPress website. Easily protect your website from viruses, hacking, and cyber dangers with our Eazy Security WordPress plugin, . Discover the top WordPress security plugins, including tools for stopping external attacks, malware and guarding your website. Boost the security of your website right now!"/>
+  <meta name="keyword" content="eazy security, EaZy security, wordpress website security plugin, best website security plugin for wordpress, security plugin for wordpress website, eazy security wordpress plugin"/>
+  <meta property="og:title" content="EaZy Security-wordpress plugin | security plugin | cybersecurity | malware cleaning"/>
+  <meta property="og:description" content="Use our #1 security plugin to protect your WordPress website. Easily protect your website from viruses, hacking, and cyber dangers with our Eazy Security WordPress plugin, . Discover the top WordPress security plugins, including tools for stopping external attacks, malware and guarding your website. Boost the security of your website right now!"/>
+  <meta property="og:url" content="https://security.bikswee.com/" />
+  <meta property="og:site_name" content="EaZy Security by Bikswee Solutions" />
 
   <!-- icofont-css-link -->
   <link rel="stylesheet" href="css/icofont.min.css">
